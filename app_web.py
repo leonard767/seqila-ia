@@ -38,7 +38,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-client = Groq(api_key="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")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # --- 3. LÓGICA DE AUDIO (MEJORADA PARA CELULAR) ---
 async def generar_voz(texto, voz):
